@@ -31,7 +31,7 @@ function DataVisualization() {
             // Desktop/Tablet: two charts per row
             // Formula: (available - grid spacing - total paper padding) / 2
             const totalPaperPadding = paperPadding * 2 // Both charts have padding
-            chartWidth = (availableWidth - gridSpacing - totalPaperPadding) / 2
+            chartWidth = (availableWidth - gridSpacing - totalPaperPadding - 32) / 2
         }
 
         const chartHeight = isMobile ? 350 : 400
