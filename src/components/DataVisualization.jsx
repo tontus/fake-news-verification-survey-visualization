@@ -116,24 +116,40 @@ function DataVisualization() {
                     variant="h2"
                     component="h1"
                     sx={{
-                        fontSize: { xs: '1.8rem', sm: '2.5rem', md: '3rem' },
-                        mb: 1,
+                        fontSize: { xs: '1.5rem', sm: '2rem', md: '2.4rem' },
+                        mb: 2,
                         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
-                        fontWeight: 'bold'
+                        fontWeight: 600,
+                        fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+                        letterSpacing: '-0.02em'
                     }}
                 >
-                    Fake News Verification Survey
+                    Fake News Verification Pattern On Social Media
                 </Typography>
                 <Typography
-                    variant="h5"
+                    variant="h6"
                     component="p"
                     sx={{
-                        fontSize: { xs: '1rem', sm: '1.2rem', md: '1.4rem' },
-                        margin: 0,
-                        opacity: 0.9
+                        fontSize: { xs: '0.9rem', sm: '1rem', md: '1.1rem' },
+                        maxWidth: '900px',
+                        margin: '0 auto',
+                        px: { xs: 2, sm: 4 },
+                        opacity: 0.95,
+                        lineHeight: 1.6,
+                        fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
+                        fontWeight: 400,
+                        '& a': {
+                            color: '#e74c3c',
+                            textDecoration: 'none',
+                            fontWeight: 500,
+                            '&:hover': {
+                                textDecoration: 'underline',
+                                color: '#c0392b'
+                            }
+                        }
                     }}
                 >
-                    Interactive Data Visualization Dashboard
+                    This interactive data visualization dashboard provides insights into the survey responses related to fake news verification on social media platforms. To get more insights and analysis on the data, please refer to this paper titled <a href="https://www.nature.com/articles/s41598-023-30125-w">"A cognitive behaviour data analysis on the use of social media in global south context focusing on Bangladesh"</a>.
                 </Typography>
             </Box>
 
