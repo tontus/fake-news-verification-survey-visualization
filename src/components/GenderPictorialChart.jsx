@@ -51,7 +51,7 @@ function GenderPictorialChart({ csvData, width = 700, height = 400, isMobile = f
             // Responsive grid parameters
             const unitsPerRow = isMobile ? 15 : 20
             const totalUnits = 100
-            const unitSize = isMobile ? 16 : 20
+            const unitSize = isMobile ? 16 : 25
             const spacing = isMobile ? 3 : 5
 
             // Calculate grid dimensions
@@ -182,13 +182,13 @@ function GenderPictorialChart({ csvData, width = 700, height = 400, isMobile = f
                 .text(legendText)
 
             // Add subtitle
-            // svg.append("text")
-            //     .attr("x", width / 2)
-            //     .attr("y", height - 25)
-            //     .attr("text-anchor", "middle")
-            //     .style("font-size", "12px")
-            //     .style("fill", "#666")
-            //     .text(`Total Respondents: ${data.total}`)
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", height - 25)
+                .attr("text-anchor", "middle")
+                .style("font-size", "12px")
+                .style("fill", "#666")
+                .text(`Total Respondents: ${data.total}`)
         }
 
         createPictorialChart()

@@ -75,8 +75,8 @@ function EducationChart({ csvData, width = 700, height = 400, isMobile = false }
 
             // Adjust margins based on screen size
             const margin = isMobile
-                ? { top: 60, right: 30, bottom: 50, left: 120 }
-                : { top: 80, right: 50, bottom: 60, left: 180 }
+                ? { top: 60, right: 30, bottom: 50, left: 80 }
+                : { top: 80, right: 50, bottom: 60, left: 100 }
 
             const chartWidth = width - margin.left - margin.right
             const chartHeight = height - margin.top - margin.bottom
