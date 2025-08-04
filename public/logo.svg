@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="3300"
+   height="3300"
+   viewBox="0 0 3300 3300"
+   sodipodi:docname="logo.eps"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="3300"
+       height="3300"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <path
+       id="path1"
+       d="M 0,24750 H 24750 V 0 H 0 v 24750"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(0.13333333,0,0,-0.13333333,0,3300)" />
+    <path
+       id="path2"
+       d="m 17956.8,14752.1 -1363.1,-1356.7 m 817.4,2428 -2439.6,-2428.2 m -265.4,4579.2 -1311.3,-1305.3 m 2391.6,766.1 -2391.7,-2380.6 m 3288.8,1659 -3288.1,-3272.8 m -6443.31,-357.9 c 74.25,331.9 180.68,651.6 315.82,955.8 m 746.86,1200.3 c 739.92,888.3 1774.32,1522.6 2953.33,1753.1 M 12792,18860.3 V 12792 h 6068.3 c 0,3351.4 -2716.9,6068.3 -6068.3,6068.3 z m -834,-834.1 c -1609.4,0 -3152.91,-639.3 -4290.93,-1777.4 -1138.01,-1138 -1777.34,-2681.4 -1777.34,-4290.8 0,-1609.4 639.33,-3152.91 1777.34,-4290.93 C 8805.09,6529.06 10348.6,5889.73 11958,5889.73 c 1609.4,0 3152.8,639.33 4290.8,1777.34 1138.1,1138.02 1777.4,2681.53 1777.4,4290.93 H 11958 Z"
+       style="fill:none;stroke:#000000;stroke-width:375.001;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(0.13333333,0,0,-0.13333333,0,3300)" />
+  </g>
+</svg>
