@@ -7,6 +7,7 @@ import OccupationSunburstChart from './OccupationSunburstChart'
 import PoliticalViewChart from './PoliticalViewChart'
 import SocialMediaBoxPlotChart from './SocialMediaBoxPlotChart'
 import SocialMediaShareBoxPlotChart from './SocialMediaShareBoxPlotChart'
+import VerificationRadarChart from './VerificationRadarChart'
 
 function DataVisualization() {
     const [csvData, setCsvData] = useState(null)
@@ -73,7 +74,8 @@ function DataVisualization() {
         { id: 'occupation', title: 'Occupation Distribution', component: OccupationSunburstChart },
         { id: 'political', title: 'Political View Distribution', component: PoliticalViewChart },
         { id: 'social-media', title: 'Social Media Usage vs Posts', component: SocialMediaBoxPlotChart },
-        { id: 'social-media-share', title: 'Social Media Usage vs Shares', component: SocialMediaShareBoxPlotChart }
+        { id: 'social-media-share', title: 'Social Media Usage vs Shares', component: SocialMediaShareBoxPlotChart },
+        { id: 'verification-radar', title: 'Verification Metrics by Political View', component: VerificationRadarChart }
         // Add more chart components here as they are created
     ]
 
