@@ -107,9 +107,9 @@ function OccupationSunburstChart({ csvData, width = 700, height = 400, isMobile 
             const svg = d3.select(svgRef.current)
             svg.selectAll("*").remove() // Clear previous content
 
-            const radius = Math.min(width, height) / 2 - 10
+            const radius = Math.min(width, height) / 2 - 30
             const centerX = width / 2
-            const centerY = height / 2
+            const centerY = height / 2 + 50 // Move circle down by 30px to avoid title overlap
 
             svg.attr("width", width)
                 .attr("height", height)
