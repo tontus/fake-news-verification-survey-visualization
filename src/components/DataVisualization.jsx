@@ -98,7 +98,7 @@ function DataVisualization() {
             {/* Header */}
             <Box
                 sx={{
-                    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                    background: 'linear-gradient(135deg, #1d2932ff 0%, #2c3e50 100%)',
                     color: 'white',
                     py: 4,
                     textAlign: 'center',
@@ -172,22 +172,6 @@ function DataVisualization() {
                     })}
                 </Grid>
             </Container>
-
-            {/* Footer */}
-            <Box
-                sx={{
-                    backgroundColor: '#333',
-                    color: 'white',
-                    textAlign: 'center',
-                    py: 2,
-                    mt: 4,
-                    width: '100%'
-                }}
-            >
-                <Typography variant="body2" sx={{ margin: 0, opacity: 0.8 }}>
-                    Fake News Verification Survey Data Visualization © 2025
-                </Typography>
-            </Box>
         </Box>
     )
 }
