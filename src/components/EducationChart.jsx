@@ -5,7 +5,7 @@ import FemaleIcon from '@mui/icons-material/Woman'
 import { createRoot } from 'react-dom/client'
 import { Box, Typography, CircularProgress, Card, CardContent } from '@mui/material'
 
-function EducationChart({ csvData }) {
+function EducationChart({ csvData, width = 700, height = 400, isMobile = false }) {
     const svgRef = useRef()
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -16,7 +16,7 @@ function EducationChart({ csvData }) {
             processData(csvData)
             setLoading(false)
         }
-    }, [csvData])
+    }, [csvData, width, height, isMobile])
 
     const processData = (rawData) => {
         // Debug: Check what columns are available
@@ -73,12 +73,16 @@ function EducationChart({ csvData }) {
             const svg = d3.select(svgRef.current)
             svg.selectAll("*").remove() // Clear previous content
 
-            const margin = { top: 80, right: 100, bottom: 60, left: 200 }
-            const width = 700 - margin.left - margin.right
-            const height = 400 - margin.top - margin.bottom
+            // Adjust margins based on screen size
+            const margin = isMobile
+                ? { top: 60, right: 30, bottom: 50, left: 120 }
+                : { top: 80, right: 50, bottom: 60, left: 180 }
 
-            svg.attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
+            const chartWidth = width - margin.left - margin.right
+            const chartHeight = height - margin.top - margin.bottom
+
+            svg.attr("width", width)
+                .attr("height", height)
 
             const g = svg.append("g")
                 .attr("transform", `translate(${margin.left},${margin.top})`)
@@ -86,11 +90,11 @@ function EducationChart({ csvData }) {
             // Create scales
             const xScale = d3.scaleLinear()
                 .domain([0, d3.max(data.educationData, d => d.total)])
-                .range([0, width])
+                .range([0, chartWidth])
 
             const yScale = d3.scaleBand()
                 .domain(data.educationData.map(d => d.education))
-                .range([0, height])
+                .range([0, chartHeight])
                 .padding(0.5)
 
             // Gender colors
@@ -260,56 +264,56 @@ function EducationChart({ csvData }) {
                 .attr("y", d => yScale(d.education) + yScale.bandwidth() / 2)
                 .attr("dy", "0.35em")
                 .attr("text-anchor", "end")
-                .style("font-size", "12px")
+                .style("font-size", isMobile ? "10px" : "12px")
                 .style("fill", "#333")
                 .style("font-weight", "500")
                 .text(d => d.education)
 
             // Add X axis
             const xAxis = d3.axisBottom(xScale)
-                .ticks(5)
+                .ticks(isMobile ? 4 : 5)
                 .tickFormat(d => d)
 
             g.append("g")
                 .attr("class", "x-axis")
-                .attr("transform", `translate(0, ${height})`)
+                .attr("transform", `translate(0, ${chartHeight})`)
                 .call(xAxis)
                 .selectAll("text")
-                .style("font-size", "11px")
+                .style("font-size", isMobile ? "10px" : "11px")
                 .style("fill", "#666")
 
             // Add X axis label
             g.append("text")
-                .attr("x", width / 2)
-                .attr("y", height + 40)
+                .attr("x", chartWidth / 2)
+                .attr("y", chartHeight + 40)
                 .attr("text-anchor", "middle")
-                .style("font-size", "12px")
+                .style("font-size", isMobile ? "11px" : "12px")
                 .style("fill", "#666")
                 .text("Number of Respondents")
 
             // Add title
             svg.append("text")
-                .attr("x", (width + margin.left + margin.right) / 2)
+                .attr("x", width / 2)
                 .attr("y", 30)
                 .attr("text-anchor", "middle")
-                .style("font-size", "18px")
+                .style("font-size", isMobile ? "16px" : "18px")
                 .style("font-weight", "bold")
                 .style("fill", "#333")
                 .text("Education Qualification by Gender Distribution")
 
             // Add subtitle
             svg.append("text")
-                .attr("x", (width + margin.left + margin.right) / 2)
+                .attr("x", width / 2)
                 .attr("y", 50)
                 .attr("text-anchor", "middle")
-                .style("font-size", "14px")
+                .style("font-size", isMobile ? "12px" : "14px")
                 .style("fill", "#666")
                 .text("Stacked bars showing male/female distribution within each education level")
 
         }
 
         createBarChart()
-    }, [data])
+    }, [data, width, height, isMobile])
 
     if (loading) {
         return (

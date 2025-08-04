@@ -6,7 +6,7 @@ import PersonIcon from '@mui/icons-material/Person'
 import { createRoot } from 'react-dom/client'
 import { Box, Typography, CircularProgress, Paper, Card, CardContent } from '@mui/material'
 
-function GenderPictorialChart({ csvData }) {
+function GenderPictorialChart({ csvData, width = 700, height = 400, isMobile = false }) {
     const svgRef = useRef()
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
@@ -17,7 +17,7 @@ function GenderPictorialChart({ csvData }) {
             processData(csvData)
             setLoading(false)
         }
-    }, [csvData])
+    }, [csvData, width, height, isMobile])
 
     const processData = (rawData) => {
         // Filter out empty rows and count gender distribution
@@ -46,16 +46,13 @@ function GenderPictorialChart({ csvData }) {
             const svg = d3.select(svgRef.current)
             svg.selectAll("*").remove() // Clear previous content
 
-            const width = 800
-            const height = 300
-
             svg.attr("width", width).attr("height", height)
 
-            // Create 100 unit grid (10x10)
-            const unitsPerRow = 20
+            // Responsive grid parameters
+            const unitsPerRow = isMobile ? 15 : 20
             const totalUnits = 100
-            const unitSize = 20
-            const spacing = 5
+            const unitSize = isMobile ? 16 : 20
+            const spacing = isMobile ? 3 : 5
 
             // Calculate grid dimensions
             const gridWidth = unitsPerRow * (unitSize + spacing) - spacing
@@ -167,7 +164,7 @@ function GenderPictorialChart({ csvData }) {
                 .attr("x", width / 2)
                 .attr("y", 30)
                 .attr("text-anchor", "middle")
-                .style("font-size", "18px")
+                .style("font-size", isMobile ? "16px" : "18px")
                 .style("font-weight", "bold")
                 .style("fill", "#333")
                 .text("Gender Distribution (Each icon = 1%)")
@@ -179,7 +176,7 @@ function GenderPictorialChart({ csvData }) {
                 .attr("x", width / 2)
                 .attr("y", 50)
                 .attr("text-anchor", "middle")
-                .style("font-size", "14px")
+                .style("font-size", isMobile ? "12px" : "14px")
                 .style("font-weight", "500")
                 .style("fill", "#666")
                 .text(legendText)
@@ -195,7 +192,7 @@ function GenderPictorialChart({ csvData }) {
         }
 
         createPictorialChart()
-    }, [data])
+    }, [data, width, height, isMobile])
 
     if (loading) {
         return (

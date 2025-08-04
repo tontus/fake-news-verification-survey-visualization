@@ -1,4 +1,4 @@
-import { Container, Grid, Paper, Typography, Box, CircularProgress } from '@mui/material'
+import { Container, Grid, Paper, Typography, Box, CircularProgress, useTheme, useMediaQuery } from '@mui/material'
 import { useEffect, useState } from 'react'
 import Papa from 'papaparse'
 import GenderPictorialChart from './GenderPictorialChart'
@@ -7,6 +7,35 @@ import EducationChart from './EducationChart'
 function DataVisualization() {
     const [csvData, setCsvData] = useState(null)
     const [loading, setLoading] = useState(true)
+    const theme = useTheme()
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+
+    // Calculate consistent chart dimensions
+    const getChartDimensions = () => {
+        const containerPadding = isMobile ? 32 : 64 // Container padding
+        const paperPadding = 32 // Paper padding (2 * 16px)
+        const gridSpacing = 32 // Grid spacing between items (4 * 8px)
+        const availableWidth = window.innerWidth - containerPadding - paperPadding
+
+        // For desktop: ensure two charts fit in one row with proper spacing
+        // For mobile: use full available width
+        let chartWidth
+        if (isMobile) {
+            chartWidth = availableWidth
+        } else {
+            // Calculate width for two charts per row: (available - spacing) / 2
+            const maxWidthForTwoCharts = (availableWidth - gridSpacing) / 2
+            chartWidth = Math.min(maxWidthForTwoCharts, 700) // Cap at 500px for optimal readability
+        }
+
+        const chartHeight = isMobile ? 350 : 400
+
+        return {
+            width: chartWidth,
+            height: chartHeight,
+            isMobile
+        }
+    }
 
     useEffect(() => {
         // Load and parse CSV data once
@@ -105,6 +134,7 @@ function DataVisualization() {
                 <Grid container spacing={4} sx={{ width: '100%' }}>
                     {charts.map(chart => {
                         const ChartComponent = chart.component
+                        const dimensions = getChartDimensions()
                         return (
                             <Grid item xs={12} lg={6} key={chart.id}>
                                 <Paper
@@ -120,7 +150,12 @@ function DataVisualization() {
                                         }
                                     }}
                                 >
-                                    <ChartComponent csvData={csvData} />
+                                    <ChartComponent
+                                        csvData={csvData}
+                                        width={dimensions.width}
+                                        height={dimensions.height}
+                                        isMobile={dimensions.isMobile}
+                                    />
                                 </Paper>
                             </Grid>
                         )
