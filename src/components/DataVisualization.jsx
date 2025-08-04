@@ -8,6 +8,7 @@ import PoliticalViewChart from './PoliticalViewChart'
 import SocialMediaBoxPlotChart from './SocialMediaBoxPlotChart'
 import SocialMediaShareBoxPlotChart from './SocialMediaShareBoxPlotChart'
 import VerificationRadarChart from './VerificationRadarChart'
+import EducationVerificationRadarChart from './EducationVerificationRadarChart'
 
 function DataVisualization() {
     const [csvData, setCsvData] = useState(null)
@@ -75,7 +76,8 @@ function DataVisualization() {
         { id: 'political', title: 'Political View Distribution', component: PoliticalViewChart },
         { id: 'social-media', title: 'Social Media Usage vs Posts', component: SocialMediaBoxPlotChart },
         { id: 'social-media-share', title: 'Social Media Usage vs Shares', component: SocialMediaShareBoxPlotChart },
-        { id: 'verification-radar', title: 'Verification Metrics by Political View', component: VerificationRadarChart }
+        { id: 'verification-radar', title: 'Verification Metrics by Political View', component: VerificationRadarChart },
+        { id: 'education-verification-radar', title: 'Verification Metrics by Education Level', component: EducationVerificationRadarChart }
         // Add more chart components here as they are created
     ]
 
