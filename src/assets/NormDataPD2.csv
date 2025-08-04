@@ -1,0 +1,105 @@
+,timestamp,gender,education_qualifications,current_occupation,political_view,device,news_source,concerned_about_consequences,share_type,age,gender_norm,education_qualifications_norm,political_view_norm,minute_per_day,post_per_day,share_per_week,importance_to_let_other_know,motivated_to_share,urgency,verification_importance,trustworthiness,verification_level,outcome,personal_interest,political_interest,concerned_about_consequences_norm
+0,10/13/2018 18:08,male,hsc,student,not interested,computer,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,"educational,entertainment",19,1,2,0,240,0,21,2,7,7,4,4,7,7,3,1,2
+1,10/13/2018 18:08,male,hsc,student,not interested,smartphone,From news portal website,Yes,religious,18,1,2,0,200,0,2,7,7,7,6,7,7,6,7,7,3
+2,10/13/2018 18:22,male,hsc,student,not interested,smartphone,From news portal website,Maybe,scientific,19,1,2,0,360,2,4,4,5,2,3,1,5,3,4,1,2
+3,10/13/2018 21:39,male,bachelors,student,liberal,smartphone,From news portal website,Yes,political,22,1,3,1,50,2,1,4,4,5,4,6,7,7,7,5,3
+4,10/13/2018 21:39,male,hsc,student,liberal,computer,From news portal website,Maybe,"awareness,entertainment",24,1,2,1,240,1,0,4,2,3,2,7,7,2,4,3,2
+5,10/13/2018 21:49,male,hsc,student,not interested,computer,From newsfeed posted by others,Maybe,entertainment,23,1,2,0,240,0,0,6,5,6,6,5,4,6,4,4,2
+6,11/6/2018 21:04,male,bachelors,student,not interested,computer,"From newsfeed posted by others,From newsfeed shared by others",No,entertainment,24,1,3,0,120,1,4,6,6,4,6,6,6,6,6,1,1
+7,11/6/2018 21:14,male,hsc,student,right wing,computer,From newsfeed posted by others,Yes,"scientific,philosophical",20,1,2,1,120,0,1,5,5,6,7,4,1,5,1,1,3
+8,11/6/2018 21:48,male,bachelors,unemployed,liberal,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,,24,1,3,1,80,1,0,3,3,3,6,7,7,5,5,6,3
+9,11/7/2018 0:36,male,hsc,student,neutral,smartphone,From news portal website,Yes,news,20,1,2,1,120,0,0,7,7,7,7,7,7,4,4,1,3
+10,11/9/2018 21:51,male,bachelors,student,not interested,computer,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"scientific,political,entertainment",25,1,3,0,240,1,0,1,7,1,7,7,7,5,6,4,3
+11,11/9/2018 21:53,female,hsc,student,not interested,smartphone,From newsfeed shared by others,Maybe,entertainment,21,2,2,0,240,1,10,2,1,1,7,6,7,4,1,1,2
+12,11/9/2018 22:01,male,hsc,student,not interested,computer,Don't share,Yes,,22,1,2,0,360,0,0,1,1,1,7,7,7,4,4,1,3
+13,11/9/2018 22:18,male,hsc,student,liberal,computer,"From newsfeed posted by others,From newsfeed shared by others",Yes,entertainment,22,1,2,1,180,1,4,7,4,5,7,6,7,4,5,4,3
+14,11/10/2018 14:09,male,hsc,student,liberal,smartphone,From newsfeed shared by others,Maybe,"sports,personal",21,1,2,1,120,0,1,5,5,4,7,5,5,5,5,5,2
+15,11/11/2018 2:43,male,bachelors,student,not interested,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,"sports,awareness,personal",23,1,3,0,300,1,1,6,5,4,7,4,4,6,3,3,2
+16,11/11/2018 21:49,male,bachelors,student,anarchist,smartphone,From newsfeed posted by others,Maybe,"political,personal,awareness",21,1,3,1,180,3,5,4,5,4,7,6,7,4,4,6,2
+17,11/11/2018 23:38,male,hsc,student,social democracy,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"entertainment,news,scientific",25,1,2,1,90,0,1,5,5,7,7,7,7,6,2,2,3
+18,11/12/2018 0:10,male,hsc,student,anarchist,computer,"From news portal website,From newsfeed shared by others",Yes,"political,philosophical",24,1,2,1,240,2,3,5,4,4,7,6,7,4,1,1,3
+19,11/12/2018 0:52,female,bachelors,student,not interested,smartphone,From news portal website,Yes,,23,2,3,0,180,0,0,3,7,7,7,7,5,4,3,1,3
+20,11/12/2018 1:00,male,bachelors,student,liberal,smartphone,From newsfeed posted by others,Yes,"news,entertainment",22,1,3,1,200,0,0,4,5,4,5,5,4,4,4,4,3
+21,11/13/2018 0:21,male,bachelors,student,not interested,both,From newsfeed shared by others,Maybe,,24,1,3,0,60,0,0,5,4,4,7,6,6,5,2,1,2
+22,11/13/2018 0:21,male,bachelors,student,neutral,both,Don't share,Yes,"educational,entertainment,personal",24,1,3,1,360,0,0,1,1,1,7,5,5,4,1,1,3
+23,11/13/2018 0:24,male,bachelors,student,not interested,both,From newsfeed shared by others,Yes,"news,entertainment",23,1,3,0,150,0,0,6,2,6,7,6,7,6,1,1,3
+24,11/13/2018 0:27,female,hsc,student,not interested,both,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,"awareness,entertainment",21,2,2,0,240,0,4,2,2,2,3,5,4,4,2,1,2
+25,11/13/2018 0:30,male,bachelors,student,not interested,smartphone,From news portal website,Yes,news,24,1,3,0,60,0,1,3,3,4,7,6,6,5,5,2,3
+26,11/13/2018 0:31,female,bachelors,student,not interested,both,From newsfeed posted by others,Yes,,22,2,3,0,360,0,0,7,1,7,7,7,7,5,1,3,3
+27,11/13/2018 0:31,female,bachelors,student,not interested,smartphone,From news portal website,Maybe,awareness,23,2,3,0,120,2,1,3,7,1,1,4,7,7,3,3,2
+28,11/13/2018 0:33,male,hsc,student,anarchist,both,From newsfeed posted by others,Yes,entertainment,21,1,2,1,200,0,0,4,1,2,7,7,5,5,3,5,3
+29,11/13/2018 0:39,female,hsc,student,not interested,computer,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,,21,2,2,0,240,1,3,1,2,3,7,2,5,5,4,3,2
+30,11/13/2018 0:40,male,hsc,student,not interested,computer,Don't share,Yes,personal,18,1,2,0,200,0,0,7,7,7,7,7,7,7,7,1,3
+31,11/13/2018 0:42,female,hsc,student,not interested,smartphone,From newsfeed posted by others,Yes,,20,2,2,0,300,1,4,4,4,4,7,6,7,5,3,1,3
+32,11/13/2018 0:44,male,bachelors,student,not interested,both,Mainstream Media,Maybe,educational,23,1,3,0,180,1,1,6,5,2,6,7,5,5,1,1,2
+33,11/13/2018 0:45,male,bachelors,student,liberal,both,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,"entertainment,awareness",20,1,3,1,120,1,4,7,7,7,7,7,7,4,1,1,2
+34,11/13/2018 0:46,male,hsc,student,liberal,smartphone,"From news portal website,From newsfeed shared by others",Yes,"sports,political,religious,educational",20,1,2,1,600,1,3,5,6,3,7,6,1,6,2,1,3
+35,11/13/2018 0:47,female,ssc,student,neutral,smartphone,From newsfeed posted by others,Yes,,17,2,1,1,120,3,0,2,1,4,7,4,7,5,1,1,3
+36,11/13/2018 0:47,male,hsc,student,not interested,both,Don't share,Maybe,"informative,educational,personal",23,1,2,0,135,0,0,4,1,4,7,4,6,4,4,4,2
+37,11/13/2018 0:58,female,hsc,student,not interested,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,"motivational,educational",22,2,2,0,250,0,0,6,6,7,7,7,7,4,2,1,2
+38,11/13/2018 1:00,male,bachelors,student,not interested,both,From newsfeed shared by others,Maybe,awareness,25,1,3,0,120,0,0,7,5,7,6,4,7,5,2,1,2
+39,11/13/2018 1:08,female,bachelors,student,not interested,smartphone,From news portal website,Maybe,"personal,entertainment",22,2,3,0,240,1,0,1,7,7,7,7,7,7,7,1,2
+40,11/13/2018 1:17,male,hsc,student,neutral,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,"informative,scientific",20,1,2,1,40,0,6,4,6,3,4,6,6,4,2,1,2
+41,11/13/2018 1:17,female,bachelors,student,liberal,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"personal,entertainment",22,2,3,1,,0,0,7,1,7,4,7,4,4,1,1,3
+42,11/13/2018 1:28,male,bachelors,student,liberal,computer,"From news portal website,From newsfeed posted by others",Yes,"entertainment,philosophical,scientific,informative,news",21,1,3,1,180,2,15,4,5,4,7,7,7,5,3,3,3
+43,11/13/2018 1:37,male,ssc,student,not interested,both,From newsfeed posted by others,Maybe,"news,scientific,educational,informative,entertainment",18,1,1,0,180,1,6,6,5,5,7,6,7,5,4,1,2
+44,11/13/2018 1:38,male,hsc,student,not interested,both,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,,25,1,2,0,360,0,1,1,1,2,7,4,7,4,5,1,2
+45,11/13/2018 1:45,male,bachelors,student,leftist,both,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"personal,entertainment,news,scientific",24,1,3,1,,2,7,4,6,5,7,6,7,4,7,4,3
+46,11/13/2018 1:59,female,hsc,student,not interested,smartphone,"From news portal website,From newsfeed posted by others",Maybe,"personal,news",22,2,2,0,240,2,3,3,6,3,7,7,7,5,3,1,2
+47,11/13/2018 2:15,male,hsc,student,liberal,smartphone,From news portal website,Maybe,entertainment,20,1,2,1,60,1,4,5,3,3,7,5,7,4,2,5,2
+48,11/13/2018 2:17,male,hsc,student,not interested,both,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"personal,scientific",19,1,2,0,90,1,3,6,5,5,7,7,7,5,4,2,3
+49,11/13/2018 2:19,male,bachelors,student,not interested,both,From news portal website,Yes,"awareness,sports",23,1,3,0,240,2,6,3,2,4,3,4,4,4,4,4,3
+50,11/13/2018 2:29,male,hsc,student,neutral,smartphone,From newsfeed shared by others,Maybe,entertainment,23,1,2,1,180,0,3,1,1,2,7,6,7,4,1,1,2
+51,11/13/2018 2:31,male,bachelors,student,not interested,smartphone,"From newsfeed posted by others,From newsfeed shared by others",Yes,"religious,political,news",24,1,3,0,420,2,2,4,5,6,7,6,6,4,4,2,3
+52,11/13/2018 2:34,male,hsc,student,neutral,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,entertainment,21,1,2,1,150,3,2,2,2,2,7,4,1,5,1,1,2
+53,11/13/2018 2:44,male,hsc,student,neutral,both,Don't share,Maybe,,24,1,2,1,240,2,0,1,1,1,7,2,7,4,1,1,2
+54,11/13/2018 2:57,male,bachelors,student,not interested,both,"From newsfeed posted by others,From newsfeed shared by others",Maybe,personal,21,1,3,0,360,1,8,4,2,3,7,7,7,4,6,1,2
+55,11/13/2018 3:06,male,bachelors,freelancer,liberal,both,"From news portal website,From newsfeed posted by others",Yes,,25,1,3,1,180,3,2,5,7,5,7,7,7,4,5,5,3
+56,11/13/2018 3:33,male,bachelors,student,neutral,smartphone,From newsfeed posted by others,Yes,personal,24,1,3,1,300,2,2,4,5,3,6,4,7,5,5,3,3
+57,11/13/2018 6:49,male,hsc,student,neutral,both,"From newsfeed posted by others,From newsfeed shared by others",Yes,"educational,awareness,entertainment",20,1,2,1,180,0,2,6,3,5,6,7,5,5,1,2,3
+58,11/13/2018 8:07,male,hsc,student,not interested,smartphone,From newsfeed posted by others,Maybe,"educational,personal",19,1,2,0,60,0,0,4,2,3,7,6,6,5,2,1,2
+59,11/13/2018 8:51,male,hsc,student,neutral,smartphone,"From newsfeed posted by others,From newsfeed shared by others",Maybe,"scientific,entertainment",19,1,2,1,150,1,4,4,4,3,6,6,6,4,4,4,2
+60,11/13/2018 9:00,male,hsc,student,right wing,smartphone,From news portal website,Yes,news,21,1,2,1,200,2,2,5,4,3,7,6,6,5,4,6,3
+61,11/13/2018 9:13,male,bachelors,student,liberal,smartphone,From newsfeed posted by others,Yes,informative,24,1,3,1,150,1,2,5,7,4,7,7,7,5,7,5,3
+62,11/13/2018 10:19,male,hsc,student,not interested,both,"From news portal website,From newsfeed posted by others",Yes,"educational,entertainment,personal",21,1,2,0,80,2,0,5,3,3,3,4,1,4,2,1,3
+63,11/13/2018 10:24,male,ssc,student,not interested,smartphone,From news portal website,Yes,entertainment,18,1,1,0,120,0,2,3,3,3,7,6,7,6,5,4,3
+64,11/13/2018 11:25,female,masters,unemployed,not interested,both,"From news portal website,From newsfeed shared by others",No,"entertainment,political,educational",26,2,4,0,180,1,4,1,5,4,7,6,7,4,1,1,1
+65,11/13/2018 11:43,female,bachelors,student,liberal,smartphone,From news portal website,Yes,,20,2,3,1,200,1,0,1,1,1,7,2,7,4,1,2,3
+66,11/13/2018 11:52,female,hsc,student,not interested,computer,"From news portal website,From newsfeed posted by others",Maybe,"entertainment,news",20,2,2,0,30,2,1,4,1,1,7,5,1,4,5,4,2
+67,11/13/2018 13:08,male,hsc,student,liberal,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,news,20,1,2,1,120,2,4,4,3,3,5,6,5,5,1,1,2
+68,11/13/2018 13:08,male,hsc,student,liberal,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,news,20,1,2,1,120,2,4,4,3,3,5,6,5,5,1,1,2
+69,11/13/2018 14:31,male,hsc,student,not interested,both,From newsfeed posted by others,Maybe,,20,1,2,0,150,1,0,2,3,3,7,5,6,2,3,2,2
+70,11/13/2018 15:44,male,hsc,student,not interested,smartphone,From newsfeed posted by others,Yes,entertainment,23,1,2,0,180,2,0,4,3,7,7,4,7,5,5,4,3
+71,11/13/2018 15:47,male,hsc,student,not interested,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,,22,1,2,0,240,0,0,5,5,4,4,4,2,4,1,1,2
+72,11/13/2018 16:32,male,bachelors,unemployed,not interested,both,"From newsfeed posted by others,From newsfeed shared by others",Yes,"sports,personal,scientific",24,1,3,0,250,2,4,4,4,6,6,5,5,6,2,2,3
+73,11/13/2018 16:41,female,hsc,student,not interested,smartphone,From newsfeed shared by others,No,educational,22,2,2,0,150,0,0,1,1,7,7,7,7,7,4,1,1
+74,11/13/2018 16:52,female,hsc,student,not interested,smartphone,"From newsfeed posted by others,From newsfeed shared by others",No,entertainment,23,2,2,0,360,2,6,2,2,2,5,6,7,4,2,1,1
+75,11/13/2018 16:53,male,bachelors,student,liberal,smartphone,From news portal website,Yes,"informative,sports",22,1,3,1,90,1,2,7,4,5,7,7,7,6,1,1,3
+76,11/13/2018 16:58,male,bachelors,student,not interested,smartphone,From newsfeed posted by others,Maybe,,23,1,3,0,300,0,0,5,3,3,6,6,5,3,1,1,2
+77,11/13/2018 17:00,female,bachelors,student,not interested,smartphone,From news portal website,Yes,religious,23,2,3,0,300,1,7,5,7,4,7,7,7,5,5,1,3
+78,11/13/2018 17:07,male,bachelors,unemployed,neutral,smartphone,From newsfeed shared by others,Yes,,23,1,3,1,180,0,2,4,4,4,4,5,6,4,3,1,3
+79,11/13/2018 17:15,male,hsc,student,not interested,both,From newsfeed posted by others,Yes,entertainment,20,1,2,0,90,1,1,2,1,1,1,1,1,4,2,1,3
+80,11/13/2018 17:29,male,hsc,student,not interested,smartphone,From newsfeed posted by others,Maybe,,20,1,2,0,60,1,2,5,3,5,4,5,4,5,1,1,2
+81,11/13/2018 18:30,male,ssc,student,not interested,smartphone,From news portal website,Maybe,,18,1,1,0,30,0,0,4,2,1,5,2,4,4,2,1,2
+82,11/13/2018 18:30,male,bachelors,student,not interested,both,From newsfeed posted by others,Yes,entertainment,23,1,3,0,300,2,3,5,7,7,5,5,2,5,2,2,3
+83,11/13/2018 18:32,male,hsc,student,leftist,computer,"From newsfeed posted by others,From newsfeed shared by others",Yes,"philosophical,entertainment",22,1,2,1,120,0,0,4,3,1,6,6,4,5,5,4,3
+84,11/13/2018 18:33,male,hsc,student,right wing,smartphone,Mainstream Media,Maybe,sports,18,1,2,1,150,2,5,4,4,5,7,7,6,6,2,2,2
+85,11/13/2018 19:05,male,ssc,student,liberal,both,"From newsfeed posted by others,From newsfeed shared by others",Maybe,entertainment,18,1,1,1,300,2,9,4,5,2,7,7,6,3,1,1,2
+86,11/13/2018 19:06,male,ssc,student,not interested,smartphone,From newsfeed posted by others,Maybe,entertainment,18,1,1,0,90,2,6,4,7,4,4,4,5,6,4,1,2
+87,11/13/2018 19:19,male,ssc,student,not interested,both,"From newsfeed posted by others,From newsfeed shared by others",No,"scientific,entertainment,educational",18,1,1,0,60,0,2,5,6,3,7,4,4,4,2,1,1
+88,11/13/2018 19:41,female,hsc,student,not interested,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"scientific,entertainment",22,2,2,0,10,1,5,6,7,6,6,5,5,4,3,1,3
+89,11/13/2018 19:42,female,hsc,student,not interested,smartphone,From newsfeed shared by others,Maybe,entertainment,21,2,2,0,30,4,0,5,6,4,7,7,7,3,1,1,2
+90,11/13/2018 19:59,male,bachelors,student,neutral,both,From newsfeed posted by others,Maybe,"sports,news",22,1,3,1,180,2,1,5,5,5,6,5,6,4,4,1,2
+91,11/13/2018 20:22,female,bachelors,student,not interested,smartphone,From news portal website,Yes,motivational,23,2,3,0,420,1,1,4,6,4,5,6,5,5,5,5,3
+92,11/13/2018 20:59,male,ssc,student,neutral,smartphone,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Yes,"entertainment,informative",19,1,1,1,180,2,3,4,2,4,7,7,7,6,3,1,3
+93,11/13/2018 21:14,female,hsc,student,not interested,smartphone,From news portal website,Yes,religious,21,2,2,0,200,2,6,4,4,4,4,4,4,4,4,5,3
+94,11/13/2018 22:02,male,ssc,student,not interested,smartphone,Mainstream Media,Yes,"scientific,sports",18,1,1,0,45,1,2,4,5,5,7,7,7,6,1,1,3
+95,11/13/2018 22:10,male,hsc,student,not interested,both,From news portal website,Maybe,"motivational,entertainment,informative",21,1,2,0,120,1,2,6,5,4,7,7,6,5,2,1,2
+96,11/13/2018 22:29,male,hsc,student,not interested,both,"From news portal website,From newsfeed posted by others,From newsfeed shared by others",Maybe,philosophical,22,1,2,0,90,2,2,5,3,4,7,7,6,4,4,1,2
+97,11/13/2018 22:32,male,hsc,student,not interested,both,"From news portal website,From newsfeed shared by others",Maybe,awareness,21,1,2,0,120,2,7,7,3,7,7,7,7,7,1,1,2
+98,11/14/2018 0:07,male,hsc,student,not interested,both,From newsfeed posted by others,Maybe,,21,1,2,0,200,2,2,3,3,3,4,4,4,3,3,2,2
+99,11/14/2018 0:10,male,hsc,student,not interested,both,From newsfeed shared by others,Yes,personal,20,1,2,0,80,0,3,4,3,4,7,5,7,4,5,2,3
+100,11/14/2018 21:11,female,hsc,student,neutral,smartphone,"From news portal website,From newsfeed shared by others",Maybe,awareness,21,2,2,1,300,1,3,3,3,4,6,5,6,4,2,2,2
+101,11/17/2018 10:56,male,bachelors,student,liberal,smartphone,From news portal website,Maybe,"awareness,entertainment",21,1,3,1,120,1,6,4,2,2,7,6,7,5,2,1,2
+102,11/25/2018 17:57,male,hsc,student,not interested,smartphone,"From news portal website,From newsfeed shared by others",Maybe,"entertainment,scientific",19,1,2,0,180,1,2,1,1,3,7,5,7,4,4,1,2
+103,12/18/2018 3:27,male,hsc,student,neutral,computer,From news portal website,Maybe,"informative,entertainment",20,1,2,1,60,0,0,4,3,4,6,6,6,5,2,1,2
