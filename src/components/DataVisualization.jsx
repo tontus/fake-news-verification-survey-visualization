@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Papa from 'papaparse'
 import GenderPictorialChart from './GenderPictorialChart'
 import EducationChart from './EducationChart'
+import OccupationSunburstChart from './OccupationSunburstChart'
 
 function DataVisualization() {
     const [csvData, setCsvData] = useState(null)
@@ -65,7 +66,8 @@ function DataVisualization() {
 
     const charts = [
         { id: 'gender', title: 'Gender Distribution', component: GenderPictorialChart },
-        { id: 'education', title: 'Education Qualifications', component: EducationChart }
+        { id: 'education', title: 'Education Qualifications', component: EducationChart },
+        { id: 'occupation', title: 'Occupation Distribution', component: OccupationSunburstChart }
         // Add more chart components here as they are created
     ]
 
