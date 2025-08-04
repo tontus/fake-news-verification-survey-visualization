@@ -5,6 +5,8 @@ import GenderPictorialChart from './GenderPictorialChart'
 import EducationChart from './EducationChart'
 import OccupationSunburstChart from './OccupationSunburstChart'
 import PoliticalViewChart from './PoliticalViewChart'
+import SocialMediaBoxPlotChart from './SocialMediaBoxPlotChart'
+import SocialMediaShareBoxPlotChart from './SocialMediaShareBoxPlotChart'
 
 function DataVisualization() {
     const [csvData, setCsvData] = useState(null)
@@ -69,7 +71,9 @@ function DataVisualization() {
         { id: 'gender', title: 'Gender Distribution', component: GenderPictorialChart },
         { id: 'education', title: 'Education Qualifications', component: EducationChart },
         { id: 'occupation', title: 'Occupation Distribution', component: OccupationSunburstChart },
-        { id: 'political', title: 'Political View Distribution', component: PoliticalViewChart }
+        { id: 'political', title: 'Political View Distribution', component: PoliticalViewChart },
+        { id: 'social-media', title: 'Social Media Usage vs Posts', component: SocialMediaBoxPlotChart },
+        { id: 'social-media-share', title: 'Social Media Usage vs Shares', component: SocialMediaShareBoxPlotChart }
         // Add more chart components here as they are created
     ]
 
