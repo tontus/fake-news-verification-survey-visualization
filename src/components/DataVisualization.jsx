@@ -12,37 +12,32 @@ function DataVisualization() {
 
     // Calculate consistent chart dimensions
     const getChartDimensions = () => {
-        // Bootstrap-like container max widths
-        const containerMaxWidths = {
-            xs: window.innerWidth - 32, // 16px padding each side
-            sm: 540 - 48, // 24px padding each side  
-            md: 720 - 64, // 32px padding each side
-            lg: 960 - 64,
-            xl: 1200 - 64
-        }
+        // Get full viewport width - no hardcoded limits
+        const viewportWidth = window.innerWidth
 
-        let containerWidth = containerMaxWidths.xs
-        if (window.innerWidth >= 1200) containerWidth = containerMaxWidths.xl
-        else if (window.innerWidth >= 960) containerWidth = containerMaxWidths.lg
-        else if (window.innerWidth >= 720) containerWidth = containerMaxWidths.md
-        else if (window.innerWidth >= 540) containerWidth = containerMaxWidths.sm
+        // Dynamic padding based on screen size
+        const containerPadding = isMobile ? 32 : 64 // Container padding (left + right)
+        const paperPadding = 32 // Paper padding per chart (p=2 means 16px each side)
+        const gridSpacing = 32 // Material-UI Grid spacing={4} between items
 
-        const gridSpacing = 32 // Grid spacing between items (4 * 8px)
+        // Calculate available width after accounting for padding
+        const availableWidth = viewportWidth - containerPadding
 
-        // For desktop: ensure two charts fit in one row with proper spacing
-        // For mobile: use full available width
         let chartWidth
         if (isMobile) {
-            chartWidth = containerWidth
+            // Mobile: single chart takes full width minus paper padding
+            chartWidth = availableWidth - paperPadding
         } else {
-            // Calculate width for two charts per row: (container - spacing) / 2
-            chartWidth = (containerWidth - gridSpacing - 100) / 2
+            // Desktop/Tablet: two charts per row
+            // Formula: (available - grid spacing - total paper padding) / 2
+            const totalPaperPadding = paperPadding * 2 // Both charts have padding
+            chartWidth = (availableWidth - gridSpacing - totalPaperPadding) / 2
         }
 
         const chartHeight = isMobile ? 350 : 400
 
         return {
-            width: chartWidth,
+            width: Math.max(chartWidth, 250), // Minimum width for readability
             height: chartHeight,
             isMobile
         }
@@ -134,14 +129,12 @@ function DataVisualization() {
 
             {/* Chart Content */}
             <Container
-                maxWidth="xl"
+                maxWidth={false}
                 sx={{
                     py: 4,
                     px: { xs: 2, sm: 3, md: 4 },
                     minHeight: 'calc(100vh - 200px)',
-                    width: '100%',
-                    margin: '0 auto', // Center the container
-                    maxWidth: { xs: '100%', sm: '540px', md: '720px', lg: '960px', xl: '1200px' } // Bootstrap-like breakpoints
+                    width: '100%'
                 }}
             >
                 <Grid container spacing={4} sx={{ width: '100%' }}>
@@ -163,12 +156,12 @@ function DataVisualization() {
                                         }
                                     }}
                                 >
-                                <ChartComponent
-                                    csvData={csvData}
-                                    width={dimensions.width}
-                                    height={dimensions.height}
-                                    isMobile={dimensions.isMobile}
-                                />
+                                    <ChartComponent
+                                        csvData={csvData}
+                                        width={dimensions.width}
+                                        height={dimensions.height}
+                                        isMobile={dimensions.isMobile}
+                                    />
                                 </Paper>
                             </Grid>
                         )
