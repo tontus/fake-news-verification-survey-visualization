@@ -4,6 +4,7 @@ import Papa from 'papaparse'
 import GenderPictorialChart from './GenderPictorialChart'
 import EducationChart from './EducationChart'
 import OccupationSunburstChart from './OccupationSunburstChart'
+import PoliticalViewChart from './PoliticalViewChart'
 
 function DataVisualization() {
     const [csvData, setCsvData] = useState(null)
@@ -67,7 +68,8 @@ function DataVisualization() {
     const charts = [
         { id: 'gender', title: 'Gender Distribution', component: GenderPictorialChart },
         { id: 'education', title: 'Education Qualifications', component: EducationChart },
-        { id: 'occupation', title: 'Occupation Distribution', component: OccupationSunburstChart }
+        { id: 'occupation', title: 'Occupation Distribution', component: OccupationSunburstChart },
+        { id: 'political', title: 'Political View Distribution', component: PoliticalViewChart }
         // Add more chart components here as they are created
     ]
 
